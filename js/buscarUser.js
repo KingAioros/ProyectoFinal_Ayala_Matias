@@ -10,10 +10,11 @@ const validarEmailDato = (valor) => {
     }
    }
 
-const mostrarBusqueda = () => {
+const mostrarBusqueda = (mbusqueda,password) => {
     
     Swal.fire({
-        title: 'Se encontraron los siguientes datos:',
+        title: `Su Usuario o email es :${mbusqueda}`,
+        text: `Password: ${password}`,
         showConfirmButton: true,
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
@@ -41,8 +42,7 @@ let buscarDato = () => {
                 datosError(`"No se encontro el Email: ${emailBuscado}"`);
             }
             else {
-                console.log(datoMail);
-                //mostrar email
+                mostrarBusqueda(datoMail.usuario,datoMail.password);
             }
         }
         else if (emailDato == false){
@@ -57,7 +57,7 @@ let buscarDato = () => {
                 datosError(`"No se encontro el usuario ${datoBuscado}"`);
             }
             else{
-                console.log(datoUser);
+                mostrarBusqueda(datoUser.usuario,datoUser.password);
             }
         }
         else if (emailDato == true){
