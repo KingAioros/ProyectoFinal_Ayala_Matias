@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HyperGym - Hable con nuestro equipo de atención y saca sus dudas sobre los planes, pago, beneficios, cancelación, promoción y otras dudas.">
+    <meta name="keywords" content="HyperGym, CONTACTO, MAPA, GMAPS, FORMULARIO, REDES, CONTACTANOS, BUSCANOS">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="../img/LogoIcon.png"/>
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Righteous&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.min.css"rel="stylesheet">
+    <title>Hyper Gym - Contacto</title>
+</head>
+
+<body>
+    <!-- Menu de navegacion - Bootstrap -->
+    <div>
+        <header class="d-flex justify-content-center  align-items-center align-self-baseline bg-light" id="contactoPage">
+            <div>
+              <a href="../index.html"><img class="logoIcon" src="../img/HyperGym.png" alt="Logo"></a>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="conteiner styleBoton">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="textMenu" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="imc.html">Imc</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="horarios.html">Horarios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div>
+                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img class="searchIcon" src="../img/SearchIcon.png" alt="searchIcon"></a>
+              </div>
+              <div>
+                <form action="grbarDatos" id="formGrabarDatos">
+                    <div id="datosUsuario">
+                        <label class="switch">
+                            <input type="checkbox" id="modoOscuro">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </div>
+    
+  <div>
+      <main class="gridMainCon">
+        <div class="gridMainCon2">
+            <h2 class="contacto">Contactanos</h2>
+            <!-- Ingresamos un formulario -->
+          <div class="formularioMaps">
+            <form class="formulario">
+              <h2 class="formularioTitle">Ingresa tus datos y registrate</h2>
+              <p class="formularioP">¿Estás registrado? <a href="login.html" class="formularioLink">Entra aqui</a></p>
+              <div class="formularioContainer">
+                <div class="grupo">
+                  <input type="text" id="name" class="formularioImput" placeholder=" ">
+                  <label for="name" class="formularioLabel">Nombre:</label>
+                  <span class="formularioLinea"></span>
+                </div>
+                <div class="grupo">
+                  <input type="text" id="lastName" class="formularioImput" placeholder=" ">
+                  <label for="lastName" class="formularioLabel">Apellido:</label>
+                  <span class="formularioLinea"></span>
+                </div>
+                <div class="grupo">
+                  <input type="text" id="usuario" class="formularioImput" placeholder=" ">
+                    <label for="usuario" class="formularioLabel">Usuario:</label>
+                    <span class="formularioLinea"></span>
+                </div>
+                <div class="grupo">
+                  <input type="text" id="mail" class="formularioImput" placeholder=" ">
+                    <label for="mail" class="formularioLabel">Email:</label>
+                    <span class="formularioLinea"></span>
+                </div>
+                <div class="grupo">
+                  <input type="password" id="password" class="formularioImput" placeholder=" ">
+                    <label for="password" class="formularioLabel">Password:</label>
+                    <span class="formularioLinea"></span>
+                </div>
+                <div class="grupo">
+                  <input type="password" id="password2" class="formularioImput" placeholder=" ">
+                    <label for="password2" class="formularioLabel">Verifica el password:</label>
+                    <span class="formularioLinea"></span>
+                </div>
+                <input type="button" class="formularioEnviar" value="Envia tus datos" id = "fEnviarCont" onclick="registrar();">
+                <p class="formularioP">Olvidaste algún dato <br><a href="buscarUser.html" class="formularioLink">Entra aqui</a></p>
+              </div> 
+            </form>
+          </div>
+          <!-- Mapa de Google -->
+          <div class="googleMaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0991522412105!2d-58.37628348432375!3d-34.60165418046004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaccf4a5be6f%3A0x97ebb6aac5198f6c!2sCoderhouse!5e0!3m2!1ses!2sar!4v1669760573901!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+                <!-- Titulo  -->
+                  <h2 class="buscanos">Seguinos en nuestras redes</h2>
+                <!-- Redes -->
+                  <div class="redesSociales">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/logoFacebook.png" alt="logoFacebook"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="../img/logoLinkedIn.png" alt="logoLinkedIn"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="../img/logoTwitter.png" alt="logoTwitter"></a>
+                    <a href="https://www.tiktok.com/" target="_blank"><img src="../img/logoTikTok.png" alt="logoTikTok"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/logoInstagram.png" alt="logoInstagram"></a>
+                  </div>
+                <!-- Colocamos una imagen y lo cubrimos con un "a" -->
+            <div class="float">
+                <a title="whatsapplogo" href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="whatsapp" src="../img/whatsapp.png" alt="whatsapplogo" ></a>
+            </div>
+          </div>
+      </main>
+  </div>
+
+    <footer class="gridFooter">
+        <img src="../img/Copyright.png" alt="">
+        <h3> Copyright HyperGym 2022. Todos los derechos reservados.</h3>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.all.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>

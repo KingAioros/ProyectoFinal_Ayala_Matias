@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gimnasio HyperGym - La red HyperGym tiene como propósito democratizar el acceso a la práctica de actividad física de alto nivel, con planos accesibles y adhesión facilitada">
+    <meta name="keywords" content="HyperGym, INDEX, NUESTRA MISION, COMPROMISO, VALORES, NUESTRA VISION">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="img/LogoIcon.png"/>
+    <!-- <link rel="miniIcon" href="img/LogoIcon.png"> -->
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Righteous&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.min.css"rel="stylesheet">
+    <title>HyperGym</title>
+</head>
+
+<body>
+    <!-- Menu de navegacion - Bootstrap -->
+    <div>
+        <header class="d-flex justify-content-center align-items-center align-self-baseline bg-light">
+            <div>
+                <a href="index.html"><img class="logoIcon" src="img/HyperGym.png" alt=""></a>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="conteiner styleBoton">
+                  <button class="navbar-toggler buttonClick" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="textMenu" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="page/imc.html">Imc</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="page/horarios.html">Horarios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="page/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div>
+                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img class="searchIcon" src="img/SearchIcon.png" alt="searchIcon"></a>
+            </div>
+            <div>
+                <form action="grbarDatos" id="formGrabarDatos">
+                    <div id="datosUsuario">
+                        <label class="switch">
+                            <input type="checkbox" id="modoOscuro">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </div>
+    <div>
+        <main class="GridMain">
+                <!-- Agregamos un logo separador -->
+            <div class="separador">
+                <img class="hyperGymseparador" src="img/hypergym-Main.png" alt="HyperGym Separador">
+            </div>
+                <!-- Video Multimedia -->
+            <div class="videoYoutube">
+                <iframe width="800" height="600" src="https://www.youtube.com/embed/HY9PqO0xIbc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+                <!-- Colocamos una imagen y lo cubrimos con un "a" -->
+            <div class="float">
+                <a title="whatsapplogo" href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="whatsapp" src="img/whatsapp.png" alt="whatsapplogo" ></a>
+            </div>
+                <!-- Cuadros de texto -->
+                <div class="gridBox1">
+                    <img class="imgIndex" src="img/apreton-de-manos.png" alt="apreton-de-manos">
+                    <h2>Nuestra Misión</h2>
+                    <p>Contribuir al desarrollo integral de las personas ayudando y apoyando constantemente a alcanzar sus metas. Ofrecemos a nuestros socios calidad de servicio en un ambiente ameno y moderno controlado por personal calificado en donde ademas de buscar el beneficio fisico tambien pueden socializar. Para cumplir con nuestra misión basamos nuestro accionar en los siguientes principios: Honestidad y Respeto, Creatividad, Trabajo en equipo, Compromiso de Lealtad y solidaridad
+                    </p>
+                </div>
+                <div class="gridBox2">
+                    <img class="imgIndex" src="img/vision.png" alt="vision">
+                    <h2>Nuestra Visión</h2>
+                    <p>Ser la mejor opción fitness y recreativa de zona norte, por nuestras actividades y servicios. Los socios hablan, nosotros escuchamos. La voz del socio siempre impulsa el desarrollo de nuestros planes estratégicos y acciones. Esta visión se mantiene obteniendo las sugerencias de los socios y sus expectativas en cada oportunidad y diferenciándonos en cómo prestamos nuestros servicios. En como se los presentamos y que le ofrecemos día a día.</p>
+                </div>
+                <div class="gridBox3">
+                    <img class="imgIndex" src="img/compromiso.png" alt="compromiso">
+                    <h2>Compromiso</h2>
+                    <p>Dedicar nuestros esfuerzos a conocer y satisfacer las necesidades de nuestros socios, proporcionándoles un servicio de calidad que cumpla con sus expectativas. Ofrecerles una atmósfera agradable, con un equipo de profesionales entusiastas, en un ambiente limpio y organizado.</p>
+                </div>
+                <div class="gridBox4">
+                    <img class="imgIndex" src="img/valores.png" alt="valores">
+                    <h2>Valores</h2>
+                    <p>Confianza en lo que hacemos. Excelencia en lo que brindamos. Pasión por hacer. Compromiso hacia nuestros socios mas: Compromiso con la Calidad - Orientación al Socio - Innovación - Profesionalidad - Transparencia - Bienestar Social</p>
+                </div>
+        </main>
+    </div>
+
+            <!-- Ingresamos un footer -->
+    <footer class="gridFooter">
+        <img src="img/Copyright.png" alt="">
+        <h3> Copyright HyperGym 2022. Todos los derechos reservados.</h3>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.all.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

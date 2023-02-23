@@ -1,0 +1,688 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globales */
+.logoIcon{
+    margin: 50px;
+    transition: 3s;
+}
+/* Animacion */
+.logoIcon:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+/* Estilo icono de busqueda */
+.searchIcon{
+    margin: 50px;
+    transition: 3s;
+}
+    /*Aplicamos Animacion */
+.searchIcon:hover{
+        transform: scale(1.2);
+        transition: 3s;
+}
+
+nav ul{
+    /* Distancia del menu */
+        gap: 15px;
+}
+
+nav ul li{
+/* Distancia y prioridad sobre otros elementos */
+            padding: 10px;
+            z-index: 10;
+}
+
+.textMenu{
+    color: orange;
+    font-family: 'Island+Moments';
+    text-shadow: 2px 2px 10px rgb(253, 213, 139);
+    transition: 1s;
+}
+/* Animacion */
+.textMenu:hover{
+    color: orangered;
+    text-shadow: 2px 2px 10px rgb(253, 213, 139);
+    transition: 1s;
+}
+
+/* Agregamos separador */
+.separador{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    grid-area: Sepa;
+    filter: drop-shadow(2px 2px 4px);
+}
+.hyperGymseparador{
+        opacity: 80%;
+        position: relative;
+        top: -5rem;
+        animation-name: hyperGymAnimation;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-direction: alternate-reverse;
+}
+@keyframes hyperGymAnimation {
+    to{
+        transform: scale(1);
+    }
+    
+    from{
+        transform: scale(1.1);
+    }
+}
+/* Aplicamos fixed para que el elemento "flote", prioridad mayor con z-index, alineamos a la derecha y centramos */
+.float{
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 50%;
+}
+/* Le asignamos un ancho y alto al logo */
+.whatsapp{
+        transition: 10s;
+}
+/* Animacion */
+.whatsapp:hover{
+    transition: 10s;
+    transform: rotate(360deg);
+}
+
+/* Aplicamos flexbox para convertir en fila, centramos y damos margen */
+.gridFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+}
+/* damos alto y ancho al CopyrightLogo, y distancia */
+.gridFooter img{
+    padding: 0.5rem;
+}
+/* Aplicamos fuente al footer */
+h3{
+    color: black;
+    font-family: 'Righteous';
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Estilos Index */
+
+/* Estructura grid */
+    .GridMain{
+        display: grid;
+        grid-template-areas: 
+        "Sepa Sepa Sepa Sepa"
+        "Video Video Video Video"
+        "Box1 Box2 Box3 Box4"
+        ;
+    }
+    /* Aplicamos flexbox, centramos y le damos margen */
+    .videoYoutube{
+        overflow:hidden;
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        position: relative;
+        grid-area: Video;
+        top: -5rem;
+    }
+    /* Aplicamos Grid-Area a los Box
+    Color de fondo a la caja y margenes laterales
+    aplicamos Flexbox, centramos y margen */
+    .gridBox1{
+        grid-area: Box1;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(250, 248, 235);
+        margin: 0.5rem;
+    }
+    .gridBox2{
+        grid-area: Box2;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(242, 249, 255);
+        margin: 0.5rem;
+    }
+    .gridBox3{
+        grid-area: Box3;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(250, 248, 235);
+        margin: 0.5rem;
+    }
+    .gridBox4{
+        grid-area: Box4;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(242, 249, 255);
+        margin: 0.5rem;
+    }
+    .imgIndex{
+        margin: 10px;
+    }
+    /* Asignamos fuente y color a los titulos */
+    div h2{
+        color: orange;
+        font-family: 'Tangerine';
+        font-size: 1.5rem;
+    }
+    /* Aplicamos fuente, color y padding */
+    div p{
+        color: rgb(151, 143, 126);
+        font-family: 'Island+Moments';
+        font-size: 1rem;
+    }
+
+    /* Estilos Contactos */
+    .gridMainCon{
+        display: grid;
+        grid-template-areas: 
+        "Sepa Sepa"
+        "GridCon GridCon"
+        ;
+    }
+    .gridMainCon2{
+        display: grid;
+        grid-area: GridCon;
+        justify-content: center;
+        grid-template-areas: 
+        "Contacto Contacto"
+        "Form Maps"
+        "Seg Seg"
+        "Reds Reds"
+        ;
+    }
+    /* le damos margen */
+    .googleMaps{
+    margin: 50px 50px;
+    grid-area: Maps;
+    }
+    /* Damos margen, color, tamaño y subrayado al titulo */
+    .contacto{
+        color: oranger;
+        font-family: 'Tangerine';
+        font-size: 3rem;
+        grid-area: Contacto;
+        text-decoration: underline;
+    }
+    .formularioMaps{
+        display: flex;
+    }
+    .formulario{
+        color: white;
+        font-family: 'Rubik Distressed';
+        font-size: 1rem;
+        background-image:  radial-gradient(#ffe3c4 0.5px, transparent 0.5px), radial-gradient(rgb(255, 156, 121) 0.5px, rgb(255, 98, 41) 0.5px);
+        background-size: 20px 20px;
+        background-position: 0 0,10px 10px;
+        margin: auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 2rem 4rem;
+        border-radius: 1rem;
+        box-shadow: 0 5px 10px -5px rgb(5, 5, 5 / 30%);
+        text-align: center;
+    }
+    .formularioTitle{
+        font-size: 2rem;
+        margin-bottom: 0.5rem
+        }
+    .formularioP{
+            font-weight: 300;
+            
+        }
+    .formularioLink{
+            font-weight: 400;
+            color: rgb(189, 189, 189);
+        }
+        .formularioContainer{
+            margin-top: 0.5rem;
+            display: grid;
+            gap: 0.5rem;
+            }
+         .grupo{
+            position: relative;
+            color: white;
+            font-family: 'Rubik Distressed';
+            font-size: 1rem;
+         }
+         .formularioImput{
+            width: 100%;
+            background: none;
+            color: white;
+            font-family: 'Rubik Distressed';
+            font-size: 1rem;
+            padding: 0.5rem 0.2rem;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #f065157e;
+        }
+        .formularioLabel{
+            color: white;
+            font-family: 'Rubik Distressed';
+            font-size: 1rem;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 5px;
+            transform: translateY(10px);
+            transition: transform .5s, color 3s; 
+        }
+        .formularioImput:focus + .formularioLabel,
+        .formularioImput:not(:placeholder-shown) + .formularioLabel{
+            transform: translateY(-12px) scale(.7);
+            transform-origin: left top;
+            color: #ffb866;
+        }
+        .formularioEnviar{
+            background-color: #2419197e;
+            color: whitesmoke;
+            font-weight: 300;
+            font-size: 1rem;
+            padding: 0.5rem 0rem;
+            border: none;
+            border-radius: 1rem;
+           }
+
+        /* Estilos Horarios */
+        /* Centramos el cronograma */
+        .cronoHorarios{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Rubik Distressed';
+            font-size: 1rem;
+        }
+        /* Color Box, sombra y borde */
+        .cronoTable{
+            background-color: whitesmoke;
+            box-shadow: 0.2rem 0.2rem 0.1rem 0.1rem rgb(255, 140, 140);
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        /* Display flex y space around a encabezado */
+        .table_header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /* Aplicamos fuente,color y tamaño a H1 */
+        .calendar{
+            outline: none;
+            border: none;
+            color: rgb(252, 123, 77);
+            font-family: 'Rubik Distressed';
+            font-size: 3rem;
+        }
+        button{
+            outline: none;
+            border: none;
+            background-color: rgb(252, 123, 77);
+            color: whitesmoke;
+            font-family: 'Cinzel';
+            font-size: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem white;
+            margin: 0.5rem;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(255, 98, 41);
+        }
+        /* Estilos de Thead */
+        thead{
+            color: whitesmoke;
+            font-family: 'Cinzel';
+            font-size: 1.2rem;
+        }
+        /* Estilos de tr */
+        tr{
+            display: grid;
+            grid-template-columns: repeat(4,15rem);
+            background-color: rgb(252, 123, 77);
+            margin: 0.5rem 0rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            grid-template-areas: 
+            "Clase Hor Profe Inten";
+        }
+        tr:hover{
+            background-color: rgb(255, 98, 41);
+        }
+        .clase{
+            grid-area: Clase;
+            text-align: center;
+        }
+        .hor{
+            grid-area: Hor;
+            text-align: center;
+        }
+        .profe{
+            grid-area: Profe;
+            text-align: center;
+        }
+        .inten{
+            grid-area: Inten;
+            text-align: center;
+        }
+        /* Estilos tbody */
+        tbody{
+            color: black;
+            font-family: 'Rubik Distressed';
+            font-size: 1rem;
+        }
+        .filaUno{
+            display: grid;
+            grid-template-columns: repeat(4,15rem);
+            background-color: rgb(252, 123, 77);
+            margin: 0.5rem 0rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            grid-template-areas: 
+            "f1Uno f1Dos f1Tres f1Cuatro";
+        }
+        .filaUno:hover{
+            background-color: rgb(255, 98, 41);
+        }
+        /* Aplicamos grid-area y centramos */
+        .f1Uno{
+            grid-area: f1Uno;
+            text-align: center;
+        }
+        .f1Dos{
+            grid-area: f1Dos;
+            text-align: center;
+        }
+        .f1Tres{
+            grid-area: f1Tres;
+            text-align: center;
+        }
+        .f1Cuatro{
+            grid-area: f1Cuatro;
+            text-align: center;
+        }
+        /* Aplicamos estilos a Fila 2 */
+        .filaDos{
+            display: grid;
+            grid-template-columns: repeat(4,15rem);
+            background-color: rgb(252, 123, 77);
+            margin: 0.5rem 0rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            grid-template-areas: 
+            "f2Uno f2Dos f2Tres f2Cuatro";
+        }
+        .filaDos:hover{
+            background-color: rgb(255, 98, 41);
+        }
+        /* Aplicamos grid-area y centramos */
+        .f2Uno{
+            grid-area: f2Uno;
+            text-align: center;
+        }
+        .f2Dos{
+            grid-area: f2Dos;
+            text-align: center;
+        }
+        .f2Tres{
+            grid-area: f2Tres;
+            text-align: center;
+        }
+        .f2Cuatro{
+            grid-area: f2Cuatro;
+            text-align: center;
+        }
+        /* Aplicamos estilos a Fila 3 */
+        .filaTres{
+            display: grid;
+            grid-template-columns: repeat(4,15rem);
+            background-color: rgb(252, 123, 77);
+            margin: 0.5rem 0rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            grid-template-areas: 
+            "f3Uno f3Dos f3Tres f3Cuatro";
+        }
+        .filaTres:hover{
+            background-color: rgb(255, 98, 41);
+        }
+        /* Aplicamos grid-area y centramos */
+        .f3Uno{
+            grid-area: f3Uno;
+            text-align: center;
+        }
+        .f3Dos{
+            grid-area: f3Dos;
+            text-align: center;
+        }
+        .f3Tres{
+            grid-area: f3Tres;
+            text-align: center;
+        }
+        .f3Cuatro{
+            grid-area: f3Cuatro;
+            text-align: center;
+        }
+        /* Aplicamos estilos a Fila 4 */
+        .filaCuatro{
+            display: grid;
+            grid-template-columns: repeat(4,15rem);
+            background-color: rgb(252, 123, 77);
+            margin: 0.5rem 0rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            grid-template-areas: 
+            "f4Uno f4Dos f4Tres f4Cuatro";
+        }
+        .filaCuatro:hover{
+            background-color: rgb(255, 98, 41);
+        }
+        /* Aplicamos grid-area y centramos */
+        .f4Uno{
+            grid-area: f4Uno;
+            text-align: center;
+        }
+        .f4Dos{
+            grid-area: f4Dos;
+            text-align: center;
+        }
+        .f4Tres{
+            grid-area: f4Tres;
+            text-align: center;
+        }
+        .f4Cuatro{
+            grid-area: f4Cuatro;
+            text-align: center;
+        }
+        /* Aplicamos estilos a Fila 5 */
+        .filaCinco{
+            display: grid;
+            grid-template-columns: repeat(4,15rem);
+            background-color: rgb(252, 123, 77);
+            margin: 0.5rem 0rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            grid-template-areas: 
+            "f5Uno f5Dos f5Tres f5Cuatro";
+        }
+        .filaCinco:hover{
+            background-color: rgb(255, 98, 41);
+        }
+        /* Aplicamos grid-area y centramos */
+            .f5Uno{
+                grid-area: f5Uno;
+                text-align: center;
+            }
+            .f5Dos{
+                grid-area: f5Dos;
+                text-align: center;
+            }
+            .f5Tres{
+                grid-area: f5Tres;
+                text-align: center;
+            }
+            .f5Cuatro{
+                grid-area: f5Cuatro;
+                text-align: center;
+            }
+            /* Aplicamos estilos a Fila 6 */
+            .filaSeis{
+                display: grid;
+                grid-template-columns: repeat(4,15rem);
+                background-color: rgb(252, 123, 77);
+                margin: 0.5rem 0rem;
+                padding: 1rem;
+                border-radius: 1rem;
+                grid-template-areas: 
+                "f6Uno f6Dos f6Tres f6Cuatro";
+            }
+            .filaSeis:hover{
+                background-color: rgb(255, 98, 41);
+            }
+            /* Aplicamos grid-area y centramos */
+            .f6Uno{
+                grid-area: f6Uno;
+                text-align: center;
+            }
+            .f6Dos{
+                grid-area: f6Dos;
+                text-align: center;
+            }
+            .f6Tres{
+                grid-area: f6Tres;
+                text-align: center;
+            }
+            .f6Cuatro{
+                grid-area: f6Cuatro;
+                text-align: center;
+            }
+            /* Aplicamos estilos a Fila 7 */
+            .filaSiete{
+                display: grid;
+                grid-template-columns: repeat(4,15rem);
+                background-color: rgb(252, 123, 77);
+                margin: 0.5rem 0rem;
+                padding: 1rem;
+                border-radius: 1rem;
+                grid-template-areas: 
+                "f7Uno f7Dos f7Tres f7Cuatro";
+            }
+            .filaSiete:hover{
+                background-color: rgb(255, 98, 41);
+            }
+            /* Aplicamos grid-area y centramos */
+                .f7Uno{
+                    grid-area: f7Uno;
+                    text-align: center;
+                }
+                .f7Dos{
+                    grid-area: f7Dos;
+                    text-align: center;
+                }
+                .f7Tres{
+                    grid-area: f7Tres;
+                    text-align: center;
+                }
+                .f7Cuatro{
+                    grid-area: f7Cuatro;
+                    text-align: center;
+                }
+
+
+                /* Colocamos una imagen de fondo y la centramos */
+    
+    #horariosPage{
+        background-image: url(../img/Horarios.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    #contactoPage{
+        background-image: url(../img/Nosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+.navOscuro {
+        background-color: rgb(71, 71, 71);
+}
+.oscuro {
+        color: white;
+        background-color: rgb(29, 26, 26);
+}
+
+    /* Estilo sacado de W3 https://www.w3schools.com/howto/howto_css_switch.asp*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    vertical-align: super;
+
+}
+
+.switch #modoOscuro {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+#modoOscuro:checked+.slider {
+    background-color: rgb(252, 123, 77);
+}
+
+#modoOscuro:focus+.slider {
+    box-shadow: 0 0 1px rgb(252, 123, 77);
+}
+
+#modoOscuro:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

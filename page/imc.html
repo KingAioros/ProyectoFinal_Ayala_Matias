@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HyperGym - Llega en forma al VERANO, comenza a ENTRENAR YA!. Encontra tu mejor VERSIÓN, empeza a sentirte BIEN.">
+    <meta name="keywords" content="HyperGym, CLASE, CRONOGRAMA, HORARIO, PROFE, CALEDARIO, JUDO, ADULTOS, FUNCIONAL, BOXEO, ZUMBA">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS only Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="../img/LogoIcon.png"/>
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Island+Moments&family=Rubik+Distressed&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.min.css"rel="stylesheet">
+    <title>Hyper Gym - IMC</title>
+</head>
+
+<body>
+    <!-- Menu de navegacion - Bootstrap -->
+    <div>
+        <header class="d-flex justify-content-center  align-items-center align-self-baseline bg-light" id="horariosPage">
+            <div>
+              <a href="../index.html"><img class="logoIcon" src="../img/HyperGym.png" alt="Logo"></a>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="conteiner styleBoton">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="textMenu" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="imc.html">Imc</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="horarios.html">Horarios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="textMenu" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div>
+              <a href="https://www.google.com.ar/?hl=es" target="_blank"><img class="searchIcon" src="../img/SearchIcon.png" alt="searchIcon"></a>
+              </div>
+              <div>
+                <form action="grbarDatos" id="formGrabarDatos">
+                    <div id="datosUsuario">
+                        <label class="switch">
+                            <input type="checkbox" id="modoOscuro">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </div>
+
+  <div>
+      <main class="gridMainHs">
+              <!-- Agregamos un logo separador -->
+          <div class="separador">
+              <img class="hyperGymseparador" src="../img/hypergym-Main.png" alt="HyperGym Separador">
+          </div>
+          <!-- Tabla -->
+          <div class="cronoHorarios">
+            <div class="cronoTable">
+              <div class="table_header" >
+                <!-- Titulos y horarios -->
+                <h1 class="calendar">Calcula tu imc</h1>
+              </div>
+              <table>
+                <p class="calendar">Ingresa los siguientes datos:</p>
+                <thead>
+                  <tr>
+                    <!-- Titulos de columnas -->
+                    <th class="hor">Peso <br><p style="color: rgb(173, 81, 47);">Ingrese su peso como el siguiente ejemplo = 70.2</p></th>
+                    <th class="profe">Altura <br><p style="color: rgb(173, 81, 47);">Ingrese su altura como el siguiente ejemplo = 1.70</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Contenidos de las filas -->
+                  <tr class="filaUno">
+                    <td class="f1Dos"><input type="text" id="peso" placeholder=" "></td>
+                    <td class="f1Tres"><input type="text" id="altura" placeholder=" "></td>
+                    <td class="f1Cuatro"><input type="button" value="Calcular" id="imcButton" onclick="bodyCheck();"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="float">
+              <a title="whatsapplogo" href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="whatsapp" src="../img/whatsapp.png" alt="whatsapplogo" ></a>
+          </div>
+      </main>
+  </div>
+
+    <footer class="gridFooter">
+        <img src="../img/Copyright.png" alt="">
+        <h3> Copyright HyperGym 2022. Todos los derechos reservados.</h3>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.all.min.js"></script>
+    <script src="../js/script.js"></script>>
+    <script src="../js/buscarUser.js"></script>
+    <script src="../js/registro.js"></script>
+    <script src="../js/imc.js"></script>
+</body>
+</html>
